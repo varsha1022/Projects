@@ -1,0 +1,104 @@
+body{
+    font-family: "Roboto";
+    color:#ffffff;
+    /* background-image: url("/SignUp Form/signup_bg.avif");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center; */
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#signupBackgroundContainer{
+    position: fixed;
+    background:transparent;
+    width:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-image: url("/SignUp Form/signup_bg.avif");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center;
+    
+}
+#signupContainer{
+    height:80vh;
+    border:2px solid rgba(255,255,255,.2);
+    border-radius: 10px;
+    box-shadow:0 0 40px rgba(0,0,0,.2) ;
+    padding: 1rem;
+    background-position: center;
+
+
+}
+#signupHead{
+    text-decoration: double;
+    margin-top: 0;
+    text-align: center;
+
+}
+.formField{
+    position: relative;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 7rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.formField input{
+    background-color: transparent;
+    border: none;
+    border: 2px solid  rgba(0,0,0,.2);
+    outline: none;
+    border-color: none;
+    border-radius: 50px;
+    height:45px;
+    width: 600%;
+    font-size: 1.1rem; 
+    padding-left: 1rem;
+    box-shadow:0 0 10px rgba(0,0,0,.2) ;
+    color: #ffffff;
+
+}
+input:focus{
+    border:2px solid rgba(250, 238, 238, 0.2);
+ 
+}
+::placeholder{
+    color:white
+}
+
+a{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+
+#signupBtn{
+    background-color: transparent;
+    border: none;
+    border: 2px solid  rgba(0,0,0,.2);
+    outline: none;
+    border-color: none;
+    border-radius: 50px;
+    height:50px;
+    width: 100%;
+    font-size: 1.2rem; 
+    font-weight: 500;
+    padding-left: 1rem;
+    box-shadow:0 0 10px rgba(0,0,0,.2) ;
+    color:#ffffff;
+    cursor: pointer;
+    
+}
+.login_signup{
+    margin-top: 1rem;
+    text-align: center;
+}

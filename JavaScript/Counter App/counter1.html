@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter Application</title>
+    <style>
+      #counterContainer {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(234, 232, 232);
+      }
+      h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 4rem;
+        margin: 10px;
+        font-weight: 500;
+      }
+      #incrementBtn,
+      #decrementBtn,
+      #resetBtn {
+        height: 3rem;
+        width: 80px;
+        color: #fff;
+        background-color: rgb(94, 97, 100);
+        border-radius: 8px;
+        margin: 0.3rem;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="counterContainer">
+      <h1 id="counterHead">Counter</h1>
+      <p id="counterValue">0</p>
+      <div id="btnContainer">
+        <button id="incrementBtn" onclick="onIncrement()">Increment</button>
+        <button id="decrementBtn" onclick="onDecrement()">Decrement</button>
+        <button id="resetBtn" onclick="onReset()">Reset</button>
+      </div>
+    </div>
+    <script src="counter1.js"></script>
+  </body>
+</html>

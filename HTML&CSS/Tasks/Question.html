@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .container {
+        background-color: #875fc0;
+        color: #1f2933;
+        text-align: center;
+        width: 30%;
+        border: 1px solid;
+        font-size: 1rem;
+        margin: 1rem;
+        position: absolute;
+        left: 34%;
+        border: none;
+      }
+      h4 {
+        text-align: right;
+        color: #ffffff;
+        padding-right: 1.5rem;
+      }
+      .top-container {
+        background-color: #ffffff;
+        margin: 2rem;
+        margin-top: 1rem;
+        border-radius: 1rem;
+      }
+      .image {
+        width: 80%;
+      }
+      .bottom-container {
+        background-color: #ffffff;
+        margin: 2rem;
+        padding: 1rem;
+        border-radius: 1rem;
+      }
+      .option {
+        border: 1px solid;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        padding: 6px;
+        font-size: 15px;
+      }
+      .option3 {
+        background-color: #875fc0;
+      }
+      button {
+        background-color: #fbaf00;
+        color: #ffffff;
+        border-radius: 0.5rem;
+        border-color: #fbaf00;
+      }
+      @media screen and (max-width: 576px) {
+        .container {
+          height: 100vh;
+        }
+        .top-container {
+          height: 30vh;
+        }
+        .image {
+          height: 40px;
+        }
+        .bottom-container {
+          height: 30vh;
+        }
+        .option {
+          height: 8%;
+        }
+        button {
+          height: 2vh;
+          width: 30%;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .option {
+          height: 15%;
+        }
+        button {
+          height: 5vh;
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h4>Score:25/45</h4>
+      <div class="top-container">
+        <h2 class="top-head">Question 10</h2>
+        <p class="top-para">
+          Which of the following is the content of the HTML paragrph element?
+        </p>
+        <img
+          class="image"
+          src=" https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/coding-question-img.png"
+          alt="code-image"
+        />
+      </div>
+      <div class="bottom-container">
+        <p class="option1 option">A. HTMl heading element</p>
+        <p class="option2 option">B. HTMl paragraph element</p>
+        <p class="option3 option">C. This is paragraph</p>
+        <p class="option4 option">D. None of the given option</p>
+        <button>Submit</button>
+      </div>
+    </div>
+  </body>
+</html>

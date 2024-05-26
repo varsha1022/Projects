@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Picker</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "Open Sans";
+      }
+      #colorPickerContainer {
+        height: 90vh;
+        border: 2px solid rgb(233, 230, 230);
+        width: 28%;
+        position: fixed;
+        left: 36%;
+        top: 5%;
+      }
+      #head {
+        color: black;
+        margin-left: 70px;
+        margin-bottom: 0;
+        font-weight: 900;
+        margin-top: 5px;
+        font-size: 2.2rem;
+      }
+      #div1,
+      #div2,
+      #div3,
+      #div4 {
+        margin-left: 30px;
+        margin-top: 20px;
+        width: 13%;
+      }
+      #button1 {
+        background-color: #f68ac4;
+        border-color: #f68ac4;
+      }
+      #button2 {
+        background-color: #36f64f;
+        border-color: #36f64f;
+      }
+      #button3 {
+        background-color: #56ccf2;
+        border-color: #56ccf2;
+      }
+      #button4 {
+        background-color: #bb6bd9;
+        border-color: #bb6bd9;
+      }
+      #button1,
+      #button2,
+      #button3,
+      #button4 {
+        height: 60px;
+        border-radius: 5px;
+        border: none;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+      .div-container {
+        color: black;
+        display: flex;
+        height: 100px;
+      }
+      #backgroundColor {
+        background-color: black;
+        color: #ffffff;
+        height: 40px;
+        text-align: center;
+        padding-top: 1px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+        padding-bottom: 19px;
+        border-radius: 1rem;
+      }
+      #span {
+        color: rgb(68, 68, 240);
+      }
+      p {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="colorPickerContainer">
+      <h1 id="head">Color Picker</h1>
+      <div class="div-container">
+        <div id="div1">
+          <button id="button1" onclick="changeBackgroundColor('#f68ac4')">
+            #f68ac4
+          </button>
+        </div>
+        <div id="div2">
+          <button id="button2" onclick="changeBackgroundColor('#36f64f')">
+            #36f64f
+          </button>
+        </div>
+        <div id="div3">
+          <button id="button3" onclick="changeBackgroundColor('#56ccf2')">
+            #56ccf2
+          </button>
+        </div>
+        <div id="div4">
+          <button id="button4" onclick="changeBackgroundColor('#bb6bd9')">
+            #bb6bd9
+          </button>
+        </div>
+      </div>
+      <div id="backgroundColor">
+        <h3>Background Color:<span id="span">#ffffff</span></h3>
+      </div>
+      <p>
+        Try clicking on one of the colors above to change the background color
+        of this page!
+      </p>
+    </div>
+
+    <script>
+      let container = document.getElementById("colorPickerContainer");
+      function changeBackgroundColor(color) {
+        container.style.backgroundColor = color;
+        document.getElementById(
+          "backgroundColor"
+        ).innerHTML = `<h3>Background Color: ${color}</h3>`;
+      }
+    </script>
+  </body>
+</html>

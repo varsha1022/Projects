@@ -1,0 +1,640 @@
+body{
+    font-family: "Roboto";
+    padding: 0;
+    margin-top: 1rem;
+}
+#foodMunchLogo{
+    width:80px;
+    height: 80px; 
+    width: 80px; 
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+#navbarNav{
+    gap:2rem;
+    color:rgb(83, 94, 105);
+    padding-top: 2rem;
+    padding-left: 2rem;
+    margin-left:560px;
+    position: absolute;
+    left: 30%;
+}
+
+#bannerSection{
+    background-image: url("./Images//foodmunch-banner-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height:100vh;
+    width: 100%;
+    margin-top: 5rem;
+    overflow: hidden;
+    position: relative;
+    color:#ffffff;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#bannerHead{
+    margin-bottom: 0;
+}
+#bannerPara{
+    margin-top:0.5rem;
+    font-size: 1.2rem;
+}
+#bannerBtnContainer{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+#viewMenuBtn,#orderNowBtn{
+    border:1px solid rgb(245, 177, 6);
+    color:#ffffff;
+    height: 2.5rem;
+    width: 110px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    
+}
+#viewMenuBtn{
+    background-color: rgb(245, 177, 6);
+}
+#orderNowBtn{
+    background-color:transparent;
+}
+#whyChooseUsSection{
+    height: 85vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #f5fafbac;
+} 
+#whyChooseUsSectionHead{
+    color: rgb(59, 46, 105);
+    font-size: 1.8rem;
+    margin-left: 3rem;
+}
+#whyChooseUsSectionPara{ 
+    color:rgb(83, 94, 105);
+    margin-left: 3rem;
+}
+#whyChooseUs{
+    background-color: aliceblue;
+}
+#whyChooseUsSectionDivContainer{
+    display: flex;
+    margin-left: 3rem;
+}
+#whyChooseUsSectionDiv1,
+#whyChooseUsSectionDiv2,#whyChooseUsSectionDiv3{
+    background-color: #fafcfc;
+    border:1px solid rgb(205, 212, 212);
+    height: 300px;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 0.6rem;
+    margin-top: 1.6rem;
+    padding: 1.6rem 1.6rem 0 1.6rem;
+    box-shadow: 10px 10px 50px -20px rgb(208, 188, 188);
+
+}
+#whyChooseUsSectionDiv1Head1,#whyChooseUsSectionDiv2Head2,#whyChooseUsSectionDiv3Head3{
+    color: rgb(59, 46, 105);
+    font-size: 1.5rem;
+
+}
+#whyChooseUsSectionDiv1Para1,#whyChooseUsSectionDiv2Para2,#whyChooseUsSectionDiv3Para3{
+    color:rgb(83, 94, 105);
+    font-size: 1rem;
+}
+
+#exploreMenuSection{
+    margin-left: 2.8rem;
+}
+#exploreMenuHead{
+    color: rgb(59, 46, 105);
+    margin-left: 3rem;
+    font-size: 1.8rem;
+
+}
+.menuDivContainer{
+    border: 2px solid;
+    border-radius: 10px;
+    border:none;
+    text-align: center;
+    padding-top: 1rem;
+    box-shadow: -10px 20px 20px -20px gray;
+    
+}
+
+#exploreMenuDivContainer{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 1rem;
+}
+.image{
+    width:200px;
+    height:200px;
+    border-radius: 12px;
+}
+.para1{
+    color:rgb(83, 94, 105);
+    font-size: 1.2rem;
+    text-align: left;
+    margin-left: 2.3rem;
+}
+.para2{
+    color:rgb(245, 177, 6);
+    font-size: 1rem;
+    margin-top: -0.7rem;
+    text-align: left;
+    margin-left: 2.3rem;
+}
+
+#freshHealthySection,#deliveryPaymentSection{
+    display: flex;
+    margin:0  2rem 6rem 2cm;
+    background-color:rgba(241, 247, 252, 0.835);
+}
+#freshHealthyContainerHead,#deliveryPaymentSectionHead{
+    color: rgb(59, 46, 105);
+}
+#freshHealthyContainerPara,#deliveryPaymentSectionPara{    
+    color:rgb(83, 94, 105);
+}
+#freshHealthyContainerBtn,#deliveryPaymentSectionBtn,#giftBtn{
+    border:1px solid rgb(245, 177, 6);
+    color:#ffffff;
+    height: 2.5rem;
+    width: 110px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    background-color:rgb(245, 177, 6) ;
+}
+#deliveryPaymentSection{
+    background-color:#ffffff;
+}
+#deliveryPaymentSectionImg{
+    height:250px;
+    width:250px;
+    margin-left:3rem
+}
+#cardSection{
+    display: flex;
+    margin-left:9rem;
+    gap:1rem;
+    position: relative;
+    top: -50px;
+}
+.cardsImage{
+    height:60px;
+    width:80px
+}
+#giftSection{
+    display: flex;
+    gap: 6em;
+    padding:5rem;
+    height: 450px;
+    background-image: linear-gradient(
+        rgb(251, 214, 145),
+        rgb(248, 232, 213),
+        rgb(251, 214, 145)
+    );
+}
+#giftImage{
+    height:350px;
+    width:300px
+}
+#giftHead{
+    color: rgb(59, 46, 105);   
+}
+#giftPara{
+    color:rgb(83, 94, 105);
+}
+#giftLeftSection{
+    padding-top: 5rem;
+}
+#followUsSection{
+    text-align: center;
+    color: rgb(59, 46, 105);   
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#iconSection{
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+}
+.icon1,.icon2,.icon3{
+    font-size: 2rem;
+    color: rgb(245, 177, 6);
+    background-color: #f6faf7;
+    width:50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+#bottomSection{
+    background-color: rgba(7, 7, 40, 0.931);
+    color:#e6e4e4c9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    margin-top: 4rem;
+}
+#bottomSectionPara2{
+    position: relative;
+    top:-25px;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 600px) {
+
+#headSection{
+    margin-right: 2rem;
+}
+#foodMunchLogo{
+    width:50px;
+    margin-left: 2.7rem;
+}
+
+#whyChooseUsSection {
+    margin: 2rem;
+    height:1220px;
+}
+
+#whyChooseUsSectionDivContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+#whyChooseUsSectionDiv1,
+#whyChooseUsSectionDiv2,#whyChooseUsSectionDiv3 {
+    height:52vh;
+    font-size: 0.1rem;
+    width: 100%;
+}
+#whyChooseUsSectionDiv3{
+    height:45vh
+}
+#exploreMenuDivContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items:center;
+}
+.image {
+    width: 340px;
+    height: 340px;
+    border-radius: 20px; 
+} 
+#freshHealthySection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 94%; 
+    margin: 2.3rem;
+    gap:10px
+}
+#freshHealthyContainer{
+    /* width:360px; */
+    height:50vh;
+    padding: 2rem;
+}
+#freshHealthyContainerHead {
+    font-size:1.5rem; 
+}
+#freshHealthyContainerPara {
+    font-size:1rem; 
+}
+#freshHealthySectionImg {
+    width: 280px;
+    height: 280px;
+    margin-top: 1.5rem;
+} 
+
+#deliveryPaymentSection {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    gap: 20px;
+    background-color: rgba(241, 247, 252, 0.835);
+    padding: 2rem; 
+    width: 90%;
+    position: relative;
+}
+#deliveryPaymentSectionHead {
+    font-size: 1.5rem;
+}
+#deliveryPaymentSectionPara {
+    font-size: 1rem;
+}
+#deliveryPaymentSectionImg {
+    height: 250px;
+    width: 250px;
+    margin-left:0.7rem;
+}
+#cardSection{
+    margin-left:2.8rem;
+    gap:1rem;
+    margin-top: 50px;
+}
+.cardsImage{
+    height:50px;
+    width:40px
+}
+
+#giftSection {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 790px;
+   
+}
+#giftImage {
+    height: 380px;
+    width: 350px;
+}
+
+#bottomSectionPara2{
+    top:-15px;
+    font-size: 0.9rem;
+}
+}
+
+
+@media  screen and (min-width: 600px) {
+
+
+#whyChooseUsSection {
+    height:1050px;
+}
+
+#whyChooseUsSectionDivContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+
+} 
+#whyChooseUsSectionDiv1,
+#whyChooseUsSectionDiv2,#whyChooseUsSectionDiv3 {
+    height:45vh;
+    width: 70%;
+}
+#whyChooseUsSectionDiv3{
+    height:38vh
+}
+#exploreMenuDivContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.image {
+    width: 450px;
+    height: 450px;
+} 
+#freshHealthySection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#freshHealthyContainer{
+    /* width:450px; */
+    height:40vh;
+    padding: 2rem;
+}
+#freshHealthyContainerHead {
+    font-size:1.7rem; 
+}
+
+#freshHealthySectionImg {
+    width: 320px;
+    height: 320px;
+    margin-top: 1rem;
+} 
+#deliveryPaymentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3.2rem;
+    gap: 20px;
+    background-color: rgba(241, 247, 252, 0.835);
+    padding: 2rem; 
+    width: 83%;
+    position: relative;
+}
+#deliveryPaymentSectionHead {
+    font-size: 1.7rem;
+}
+#deliveryPaymentSectionPara {
+    font-size: 1rem;
+}
+#deliveryPaymentSectionImg {
+    height: 270px;
+    width: 200px;
+    margin-left: 0.5rem;
+}
+
+#cardSection{
+    margin-left:3.2rem;
+    gap:1rem;
+}
+.cardsImage{
+    height:60px;
+    width:70px
+}
+
+#giftSection {
+    display: flex;
+    flex-direction: column;
+    padding: 2.6rem;
+    height: 800px;
+   
+}
+#giftImage {
+    height: 390px;
+    width: 320px;
+  }
+
+#bottomSectionPara2{
+    top:-15px;
+    font-size: 0.9rem;
+}
+}
+
+@media screen and (min-width: 768px) {
+
+
+#navbarNav{
+    margin-left: 320px;
+    position: absolute;
+    left: 7%;
+
+}
+#whyChooseUsSection {
+    margin: 2rem;
+    height:550px;
+}
+#whyChooseUsSectionDivContainer {
+    display: grid;
+    grid-template-rows:repeat(1,1fr) ;
+    grid-template-columns:repeat(3,1fr) ;
+}
+#whyChooseUsSectionDiv1,
+#whyChooseUsSectionDiv2,#whyChooseUsSectionDiv3 {
+    height:53vh;
+    font-size: 0.4rem;
+    width: 97%;
+    gap:2rem
+}
+#whyChooseUsSectionDiv1Head1,#whyChooseUsSectionDiv2Head2,#whyChooseUsSectionDiv3Head3{
+    font-size: 1.7rem;
+}
+
+#exploreMenuDivContainer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(4,1fr) ;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    height:650px;
+    padding: 1.2rem;
+    height:1780px
+
+}
+.image {
+    width: 320px;
+    height: 320px;
+} 
+#freshHealthySection {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    justify-content: center;
+    align-items: center; 
+}
+#freshHealthyContainer{
+    height:60vh;
+    padding: 1rem;
+}
+#freshHealthyContainerHead {
+    font-size:1.7rem; 
+}
+
+#freshHealthySectionImg {
+    width: 320px;
+    height: 320px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+} 
+#deliveryPaymentSection {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    justify-content: center;
+    align-items: center; 
+    margin: 4rem;
+    gap: 30px;
+    background-color: rgba(241, 247, 252, 0.835);
+    padding: 2rem;
+    width: 90%;
+}
+#deliveryPaymentSectionImg {
+    height: 290px;
+    width: 220px;
+    margin-left: 7rem;
+}
+
+#cardSection{
+    margin-left:4rem;
+    gap:1rem;
+     
+}
+.cardsImage{
+    height:50px;
+    width:50px;
+    margin-top: 2rem;
+}
+
+#giftSection {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    padding: 2rem;
+    height: 530px;
+ 
+}
+#giftImage {
+    height: 420px;
+    width: 320px;
+}
+
+}
+
+@media  screen and (min-width: 1000px) {
+   
+#whyChooseUsSection {
+    margin: 2rem;
+    height:500px;
+}
+#whyChooseUsSectionDivContainer {
+    display: grid;
+    grid-template-rows:repeat(1,1fr) ;
+    grid-template-columns:repeat(3,1fr) ;
+  
+}
+#navbarNav{
+    margin-left: 320px;
+    flex-wrap: nowrap;
+    display: flex;
+    position: absolute;
+    left: 32%;
+
+}
+#whyChooseUsSectionDiv1,
+#whyChooseUsSectionDiv2,#whyChooseUsSectionDiv3 {
+    height:50vh;
+    width: 95%;
+}
+
+#exploreMenuDivContainer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(4,2fr) ;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height:700px
+}
+.image {
+    width: 210px;
+    height: 210px;
+
+} 
+#freshHealthySection {
+    padding-top: 2rem;
+    width:90%;
+    margin-left: 4rem;
+}
+     
+}

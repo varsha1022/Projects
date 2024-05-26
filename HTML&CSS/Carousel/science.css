@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+
+.science-container {
+  background-color: #225db0;
+  color: #ffffff;
+  text-align: left;
+  width: 30%;
+  padding: 1rem;
+  position: fixed;
+  left: 36%;
+  top: 2%;
+  font-family: "Roboto";
+}
+
+.image {
+  height: 40vh;
+  width: 20%;
+}
+
+.list {
+  padding-top: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+.btn-container {
+  margin-top: 2rem;
+  background-color: #225db0;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+#backBtn {
+  border: none;
+  border-radius: 5px;
+  margin-left: 8px;
+  cursor: pointer;
+}

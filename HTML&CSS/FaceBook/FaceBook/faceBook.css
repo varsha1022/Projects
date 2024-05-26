@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#fbContainer {
+    width: 100%;
+    height: 100%;
+}
+#contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow-y: auto; 
+    width:100%;
+    position: fixed;
+    margin-top:0rem;
+    padding-top: 8rem;
+    background-color: rgb(240, 242, 243);
+}
+
+#footerSection {
+    width: 100%;
+    padding: 2%;
+}
+#faceContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px 40px;
+    text-align: center;
+}
+
+#faceBookHead{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #316FF6
+}
+#faceBookPara{
+    font-size: 1.8rem;
+}
+#leftSection{
+    width:600px;
+    padding-left: 40px;
+    text-align: start;
+}
+#rightSection{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d2d3d8;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4rem;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height:57vh;
+    width:30vw;
+    background-color: #ffffff;
+}
+#loginContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+#emailPhone:focus,#password:focus {
+    border-color: dodgerblue;
+    outline: none;
+}
+#emailPhone{
+    margin-bottom: 10px;
+    height: 3rem;
+}
+#password{
+    margin-bottom: 5px;
+    height: 3rem;
+}
+#logIn,#newAccount{
+    text-align: center;
+    border-radius: 10px;
+    height: 3.3rem;
+    margin:9px 0px;
+}
+#logIn{
+    width:26vw;
+
+}
+#newAccount{
+    width:20vw;
+
+}
+::placeholder{
+    font-size: 18px;
+}
+input{
+    border: none;
+    width:26vw;
+    height:13px;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    padding: 1rem;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+#logIn{
+    background-color: #316FF6;
+    border: 1px solid;
+    border-color: #316FF6;
+    color: #ffffff;
+    font-weight: 700;
+
+}
+#forgotPassword{
+    text-decoration: none;
+    margin-bottom: 0;
+}
+#forgotPassword:hover{
+    text-decoration: underline;
+}
+#newAccount{
+    background-color: #3cb61e;
+    border: 1px solid;
+    border-color: #3cb61e;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 0;
+}
+#newAccount:hover{
+    background-color: #56cc1a;
+}
+#createPage{
+    text-decoration: none;
+    font-weight: 700;
+    color:black
+}
+#createPage:hover{
+    text-decoration: underline;
+}
+.newPage{
+    padding: 1rem;
+    position: relative;
+    top:-32%;
+    left:27.2%;
+}
+
+#foot1{
+    margin-left: 4.8rem;
+}
+#foot2{
+    margin-left: 5rem;
+    margin-right: 13rem;
+}
+#lang1,#lang2,#lang3,#lang4,#lang5,#lang6,#lang7,#lang8,#lang9,#lang10,#lang11{
+    text-decoration: none;
+    margin: 4px;
+    color: rgba(52, 65, 69, 0.691);
+    font-size: 12px;
+}
+#lang1:hover,#lang2:hover,#lang3:hover,#lang4:hover,#lang5:hover,#lang6:hover,#lang7:hover,#lang8:hover,#lang9:hover,#lang10:hover,#lang11:hover{
+    text-decoration: underline;
+
+}
+#more{
+    border: 1px solid gray;
+    background-color: lightgray;
+   font-size: 20px;
+  
+}
+
+#link1,#link2,#link3,#link4,#link5,#link6,#link7,#link8,#link9,#link10,#link11,#link12,#link13,#link14,#link15,#link16,#link17,#link18,#link19,#link20,#link21,#link22,#link22,#link23,#link24,#link25,#link26,#link27 ,#link28 ,#link29{
+    color: rgba(52, 65, 69, 0.691);
+    font-size: 13.5px;
+    margin: 3px;
+    text-decoration: none;
+}
+#link1:hover,#link2:hover,#link3:hover,#link4:hover,#link5:hover,#link6:hover,#link7:hover,#link8:hover,#link9:hover,#link10:hover,#link11:hover,#link12:hover,#link13:hover,#link14:hover,#link15:hover,#link16:hover,#link17:hover,#link18:hover,#link19:hover,#link20:hover,#link21:hover,#link22:hover,#link22:hover,#link23:hover,#link24:hover,#link25:hover,#link26:hover,#link27:hover,#link28:hover,#link29:hover{
+    text-decoration: underline;
+}
+#footerSection{
+    margin-top: -10%;
+}

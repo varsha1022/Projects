@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Like and Unlike</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <style>
+      .container {
+        text-align: center;
+        width: 30%;
+        position: fixed;
+        left: 36%;
+        top: 24%;
+      }
+
+      .btm {
+        display: flex;
+        justify-content: center;
+      }
+      #likeIcon {
+        margin: 1rem;
+      }
+      image {
+        width: 200px;
+      }
+      .like {
+        font-size: 3rem;
+        color: rgb(201, 201, 201);
+        border-radius: 10px;
+      }
+      #likeButton {
+        color: white;
+        margin: 1rem;
+        margin-top: 1.5rem;
+        border-radius: 6px;
+        font-size: 1.3rem;
+        width: 70%;
+        height: 2rem;
+        cursor: pointer;
+        border: none;
+        background-color: rgb(201, 201, 201);
+        border-color: rgb(201, 201, 201);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="puppyImage">
+        <img
+          src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/white-puppy-img.png"
+          alt=""
+          height="200px"
+        />
+      </div>
+      <div class="btm">
+        <div id="like">
+          <span class="material-symbols-outlined like" id="likeIcon">
+            thumb_up
+          </span>
+        </div>
+        <div id="button">
+          <button id="likeButton" onclick="likePuppy()">Like</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      let likeElement = document.getElementById("puppyImage");
+      let iconElement = document.getElementById("likeIcon");
+      let buttonElement = document.getElementById("likeButton");
+      let isLiked = false;
+
+      function likePuppy() {
+        if (!isLiked) {
+          likeElement.innerHTML = `<img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/white-puppy-liked-img.png" height="200px"
+              width="100%"/>`;
+          iconElement.style.color = "blue";
+          iconElement.style.borderRadius = "10px";
+          buttonElement.textContent = "Unlike";
+          buttonElement.style.backgroundColor = "blue";
+          isLiked = true;
+        } else {
+          likeElement.innerHTML = `<img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/white-puppy-img.png" height="200px"
+              width="100%"/>`;
+          iconElement.style.color = "rgb(201, 201, 201)";
+          buttonElement.textContent = "Like";
+          buttonElement.style.backgroundColor = "rgb(201, 201, 201)";
+          isLiked = false;
+        }
+      }
+    </script>
+  </body>
+</html>

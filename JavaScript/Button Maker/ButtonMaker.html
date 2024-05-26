@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Maker</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "Open Sans";
+      }
+      #btnContainer {
+        height: 100vh;
+        width: 30%;
+        background-color: rgba(8, 8, 70, 0.914);
+        margin-top: 0;
+        position: absolute;
+        left: 36%;
+      }
+      h1 {
+        text-align: center;
+        color: #ffffff;
+        margin-top: 8px;
+        padding-top: 10px;
+      }
+      .container {
+        border: 1px solid;
+        border-radius: 4px;
+        padding: 1rem;
+        margin-top: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+        height: 60vh;
+        color: rgb(40, 40, 93);
+        background-color: rgba(212, 234, 252, 0.99);
+      }
+      #bgColorInput,
+      #fontColorInput,
+      #fontSizeInput,
+      #fontWeightInput,
+      #paddingInput,
+      #borderRadiusInput {
+        width: 100%;
+        height: 1.8rem;
+        border-radius: 5px;
+        border: none;
+        margin: 7px 0;
+      }
+      #bgColorInput:focus,
+      #fontColorInput:focus,
+      #fontSizeInput:focus,
+      #fontWeightInput:focus,
+      #paddingInput:focus,
+      #borderRadiusInput:focus {
+        outline: none;
+        border: 2px solid lightcyan;
+      }
+      #btn1 {
+        text-align: right;
+        margin-right: 45px;
+        margin-top: 20px;
+      }
+      #applyButton {
+        border-radius: 5px;
+        height: 2rem;
+        color: white;
+        background-color: blue;
+        width: 20%;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+      }
+      #btn2 {
+        text-align: center;
+      }
+      #customBtn {
+        border-radius: 5px;
+        height: 2rem;
+        border: none;
+        color: blue;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="btnContainer">
+      <h1>Button maker</h1>
+      <div class="container">
+        <label for="bgColorInput">Background Color:</label>
+        <input type="text" id="bgColorInput" /><br />
+
+        <label for="fontColorInput">Font Color:</label>
+        <input type="text" id="fontColorInput" /><br />
+
+        <label for="fontSizeInput">Font Size:</label>
+        <input type="number" id="fontSizeInput" /><br />
+
+        <label for="fontWeightInput">Font Weight:</label>
+        <input type="text" id="fontWeightInput" /><br />
+
+        <label for="paddingInput">Padding:</label>
+        <input type="number" id="paddingInput" /><br />
+
+        <label for="borderRadiusInput">Border Radius:</label>
+        <input type="number" id="borderRadiusInput" /><br />
+      </div>
+      <div id="btn1">
+        <button id="applyButton">Apply</button>
+      </div>
+      <div id="btn2">
+        <button id="customBtn">Custom Button</button>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("applyButton")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+
+          // Retrieve input values
+          let container = document.getElementById("btnContainer");
+          let bgColor = document.getElementById("bgColorInput").value;
+          let fontColor = document.getElementById("fontColorInput").value;
+          let fontSize = document.getElementById("fontSizeInput").value;
+          let fontWeight = document.getElementById("fontWeightInput").value;
+          let padding = document.getElementById("paddingInput").value;
+          let borderRadius = document.getElementById("borderRadiusInput").value;
+
+          // Validate input values
+          if (
+            !bgColor ||
+            !fontColor ||
+            isNaN(fontSize) ||
+            !fontWeight ||
+            isNaN(padding) ||
+            isNaN(borderRadius)
+          ) {
+            alert("Please fill all fields with valid values.");
+            return; // Exit function if any input is invalid
+          }
+
+          // Apply styles to the custom button
+          let customButton = document.getElementById("customBtn");
+          customButton.style.backgroundColor = bgColor;
+          customButton.style.color = fontColor;
+          customButton.style.fontSize = fontSize + "px"; // Add unit (e.g., "px") to fontSize
+          customButton.style.fontWeight = fontWeight;
+          customButton.style.padding = padding + "px"; // Add unit (e.g., "px") to padding
+          customButton.style.borderRadius = borderRadius + "px"; // Add unit (e.g., "px") to borderRadius
+          container.style.height = "auto";
+        });
+    </script>
+  </body>
+</html>

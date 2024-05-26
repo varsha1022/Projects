@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+.bg-container {
+  background-image: url("https://assets.ccbp.in/frontend/static-website/yoga-bg.png");
+  background-repeat: no-repeat;
+  background-size: 31% 100%;
+  padding: 6px;
+  color: #253263;
+  font-family: "Roboto";
+  position: fixed;
+  left:34%;
+  top:3%;
+  width: 100%;
+}
+.girl {
+  padding-top: 5rem;
+  height: 350px;
+  margin-left: 3rem;
+}
+button {
+  background-color: #132d84;
+  height: 2.5rem;
+  border-radius: 1rem;
+  color: #fad693;
+}
+
+p {
+  font-size: 14px;
+  color: #323f4b;
+  margin-left: 19px;
+}
+h4 {
+  color: #132d84;
+  padding-right: 1.5rem;
+}
+button{
+  border: none;
+  width: 8%;
+  color: #fadba2;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+#btnContainer{
+  margin-left: 10rem;
+}

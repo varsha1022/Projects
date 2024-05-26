@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <style>
+      #gameContainer {
+        height: 30vh;
+        width: 35%;
+        padding: 10px;
+        font-weight: 500;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        position: fixed;
+        top: 26%;
+        left: 33%;
+        background-color: rgb(225, 227, 228);
+      }
+      h1 {
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 2.2rem;
+      }
+      input {
+        border: 1px solid rgb(192, 192, 194);
+        height: 1.5rem;
+        width: 180px;
+        border-radius: 5px;
+      }
+      ::placeholder {
+        padding-left: 10px;
+        font-weight: 600;
+      }
+      span {
+        height: 2rem;
+        font-size: 20px;
+        margin-left: 10px;
+      }
+      button {
+        margin-left: 10px;
+        height: 1.75rem;
+        border-radius: 5px;
+        font-weight: 500;
+        border: 1px solid rgb(192, 192, 194);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gameContainer">
+      <h1>Addition Game</h1>
+      <span id="firstNum">2</span> <span>+</span> <span id="secondNum">4</span>
+      <span>=</span>
+      <input type="number" id="result" placeholder="Add the numbers" />
+      <button onclick="checkResult()">Check</button>
+      <button onclick="resetResult()">Reset</button>
+      <p id="outputMessage"></p>
+    </div>
+    <script>
+      let firstNum = document.getElementById("firstNum");
+      //   console.log(firstNum);
+      let secondNum = document.getElementById("secondNum");
+      //   console.log(secondNum);
+      let result = document.getElementById("result");
+      //   console.log(result);
+
+      //   let randomNum = Math.random() * 100; 0-1
+      //   console.log(randomNum);
+
+      let firstRandomNum = Math.ceil(Math.random() * 100);
+      //   console.log(firstRandomNum);
+      let secondRandomNum = Math.floor(Math.random() * 100);
+      //   console.log(secondRandomNum);
+
+      firstNum.textContent = firstRandomNum;
+      secondNum.textContent = secondRandomNum;
+
+      let output = firstRandomNum + secondRandomNum;
+      //   console.log(output);
+
+      function checkResult() {
+        let finalResult = Number(result.value);
+        // console.log(typeof finalResult);
+        if (output === finalResult) {
+          outputMessage.textContent = "Correct";
+          outputMessage.style.textAlign = "center";
+          outputMessage.style.fontWeight = "900";
+          outputMessage.style.fontSize = "15px";
+
+          //   console.log("Correct answer");
+        } else if (result.value === "") {
+          alert("Enter a number");
+        } else {
+          //   console.log("Sorry! Wrong answer");
+          outputMessage.textContent = "Wrong";
+          outputMessage.style.textAlign = "center";
+          outputMessage.style.fontWeight = "900";
+          outputMessage.style.fontSize = "15px";
+        }
+      }
+      function resetResult() {
+        location.reload();
+        //   let reset = "0";
+        //     // console.log(reset);
+      }
+    </script>
+  </body>
+</html>

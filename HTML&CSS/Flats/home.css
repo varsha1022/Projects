@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Bree Serif";
+}
+
+.bg-container {
+  padding: 5px;
+  position: fixed;
+  left: 36%;
+  top: 17%;
+}
+
+.flats-home {
+  height: 40vh;
+  width: 130%;
+}
+
+h2 {
+  color: #f19116;
+}
+
+p {
+  color: #7b8794;
+}
+
+.bottom-container {
+  width: 100%;
+  border-radius: 5rem;
+  margin-left: 6.6rem;
+  background-color: #ffffff;
+}
+
+button {
+  height: 2.5rem;
+  width: 100px;
+  border-radius: 0.5rem;
+  background-color: #f19116;
+  border-color: #f19116;
+  color: #ffffff;
+  margin-left: 2rem;
+  cursor: pointer;
+}

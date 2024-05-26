@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Conference</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      .bg-container1 {
+        position: fixed;
+        top: 2%;
+        left: 33%;
+        font-family: "Roboto";
+      }
+
+      .view {
+        text-align: center;
+      }
+
+      h2,
+      h3 {
+        color: #183b56;
+      }
+
+      p {
+        margin: 0;
+        color: #5a7184;
+      }
+
+      button {
+        background-color: blue;
+        color: #ffffff;
+        border-radius: 6px;
+        border-color: blue;
+        height: 2.5rem;
+        width: 16%;
+        font-size: 17px;
+        cursor: pointer;
+      }
+
+      .count {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 30%);
+        gap: 1rem;
+      }
+
+      iframe {
+        height: 300px;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-container1">
+      <div class="vdo1">
+        <iframe
+          src="https://www.youtube.com/embed/vKJ6nXE_6Hc"
+          frameborder="0"
+          height="300px"
+          width="100%"
+        ></iframe>
+      </div>
+      <div class="view">
+        <div class="data2">
+          <h2>The Things Conference</h2>
+          <p>Join Asia's Largest Conference on LoRaWAN</p>
+          <div class="count">
+            <div class="one">
+              <h3>1400+</h3>
+              <p>Attendees</p>
+            </div>
+            <div class="two">
+              <h3>100+</h3>
+              <p>Workshops</p>
+            </div>
+            <div class="three">
+              <h3>120+</h3>
+              <p>Speakers</p>
+            </div>
+            <div class="four">
+              <h3>10+</h3>
+              <p>Countries</p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-container">
+          <a href="./home.html"><button>Back</button></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

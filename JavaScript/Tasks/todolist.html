@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Manipulations</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+    </style>
+  </head>
+  <body>
+    <div id="bg-container">
+      <h1 id="todoHead">Todolist</h1>
+      <p id="firstPara"></p>
+      <h4 id="heading"></h4>
+      <p id="secondPara"></p>
+      <button id="btn">Start</button>
+      <p id="thirdPara"></p>
+    </div>
+
+    <script>
+      let bodyElement = document.getElementById("bg-container");
+      bodyElement.style.textAlign = "center";
+      bodyElement.style.height = "87vh";
+      bodyElement.style.width = "35%";
+      bodyElement.style.padding = "15px";
+      bodyElement.style.position = "fixed";
+      bodyElement.style.left = "32%";
+      bodyElement.style.top = "5%";
+
+      bodyElement.style.color = "white";
+      bodyElement.style.fontSize = "1.2rem";
+      bodyElement.style.backgroundImage =
+        'url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/todolistbg.png")';
+      bodyElement.style.backgroundRepeat = "no-repeat";
+      bodyElement.style.backgroundSize = "100% 100%";
+      bodyElement.style.fontFamily = "Roboto";
+
+      let todoElement = document.getElementById("todoHead");
+      todoElement.textContent = "Todolist";
+      todoElement.style.fontWeight = "200px";
+      todoElement.style.marginTop = "10px";
+
+      let para1 = document.getElementById("firstPara");
+      para1.textContent =
+        "Each day I will accomplish one thing on my todo list.";
+
+      let head6 = document.getElementById("heading");
+      head6.textContent = "Read a Book";
+      head6.style.textAlign = "left";
+
+      let para2 = document.getElementById("secondPara");
+      para2.textContent =
+        "I don't think that the human race will survive the next thousand years,unless we spread into space.There are too many accidents that can befall life on a single planet.But I,m an optimist...";
+
+      let buttonElement = document.getElementById("btn");
+      buttonElement.style.backgroundColor = "orange";
+      buttonElement.style.borderRadius = "8px";
+      buttonElement.style.borderColor = "orange";
+      buttonElement.style.height = "2rem";
+      buttonElement.style.width = "4rem";
+      buttonElement.style.color = "white";
+      buttonElement.style.border = "none";
+      buttonElement.style.cursor = "pointer";
+
+      let para3 = document.getElementById("thirdPara");
+      para3.textContent = "Don't skip introduction";
+      para3.style.textDecoration = "underline";
+      para3.style.fontSize = "0.9rem";
+    </script>
+  </body>
+</html>

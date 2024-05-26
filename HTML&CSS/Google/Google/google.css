@@ -1,0 +1,275 @@
+#headList{
+    list-style-type: none;
+    display: flex;
+    gap:1.7rem;
+    padding-top: 1.5rem;
+    margin-left: 950px;
+}
+
+#gmailLink,
+#imagesLink{
+    text-decoration:none;
+    color:black
+}
+
+#gmailLink:hover,
+#imagesLink:hover{
+    text-decoration: underline;
+}
+
+.bi-grid-3x3-gap-fill:hover{
+    background-color:lightgray;
+    border-radius: 10px;
+    width:28px;
+    box-sizing: border-box;
+    padding-left: 7px;
+}
+
+#googleIcon{
+    height:30px;
+    width:30px;
+    margin-right:1rem;
+}
+
+#googleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#googleLogo{
+    height:100px;
+    width:300px
+}
+
+#searchContainer{
+    display: flex;
+    border: 1.4px solid lightgray;
+    background-color:white;
+    border-radius: 40px;
+    height: 3rem;
+    width:50%;
+    position: relative;
+    margin: 0 auto; /* Center horizontally */
+}
+
+#searchContainer:hover {
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+#searchField{
+    border: none;
+    background-color: white;
+    outline: none;
+    width: 100%;
+    min-width: 100px;
+    margin: 0;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#searchField:hover{
+    background-color: #ffffff;
+}
+
+#searchField:focus{
+    background-color: #fff;
+}
+
+.bi-search{
+    margin-left: 1rem;
+    margin-right: 10px;
+    padding-top: 13px;
+    font-size: 13px;
+}
+
+.bi-mic{
+    margin-left:200px;
+    padding-top: 7px;
+    font-size: 1.4rem; 
+}
+
+.bi-camera{
+    margin-right:10px;
+    padding-top: 7px;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+}
+
+#googleSearchBtn,#feelingLuckyBtn{
+    border: 1px soild red;
+    border: none;
+    height:50px;
+}
+
+#btnContainer{
+    margin: 20px 0 10px 0;
+}
+
+.searchBtnLink,.luckyBtnLink{
+    border: 1px solid rgba(191,191,191,0.183);
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 1rem;
+    color:black;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgb(254, 255, 255);
+}
+
+p{
+    font-size: 13px;
+}
+
+#language1,#language2,#language3,#language4,#language5,#language6,#language7,#language8,#language9{
+    color:rgb(40, 24, 134);
+    gap:1rem;
+    margin:0px  1.5px 0 1.5px;
+    font-size: 15px;
+    text-decoration: none;
+ }
+
+#language1:hover,#language2:hover,#language3:hover,#language4:hover,#language5:hover,#language6:hover,#language7:hover,#language8:hover,#language9:hover {
+      text-decoration: underline;
+}
+
+.searchBtnLink:hover,
+.luckyBtnLink:hover {
+      text-decoration: none;
+      border-color: rgba(205, 201, 201, 0.183);
+      background-color: rgba(205, 201, 201, 0.183);
+}
+
+#footerSection{
+    background-color: #e4e9e9;
+    margin-top: 148px;
+    color: black;
+    width:100%;
+    margin-right:8rem;
+}
+
+#foot1{
+    font-size: 1rem;
+    margin-left: 2rem;
+    padding-top: 1rem;
+}
+
+#foot2{
+    display: flex;
+    justify-content: space-between;
+    padding:0 5px;
+}
+
+#leftFoot{
+    display: flex;
+    gap:15px;
+}
+
+#rightFoot{
+    margin-right: 2rem;
+    display: flex;
+    gap:10px
+}
+
+#leftFoot a{
+    text-decoration: none;
+    color: black;
+}
+
+#rightFoot a{
+    text-decoration: none;
+    color: black;
+}
+
+#leftFoot a:hover,#rightFoot a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 600px){
+    #headList{
+        margin-left: 200px;
+    }
+    
+    #language1,#language2,#language3,#language4,#language5,#language6,#language7,#language8,#language9{
+        margin:0px  0px ;
+        font-size: 13px;
+    }
+
+    #footerSection{
+        margin-top: 140px;
+    }
+    
+    #foot1{
+        font-size: 13px;
+    }
+
+    #foot2{
+        padding:0 2px;
+    }
+
+    #leftFoot{
+        font-size: 13px;
+    }
+
+    #rightFoot{
+       font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #headList{
+        margin-left: 300px;
+    }
+
+    #language1,#language2,#language3,#language4,#language5,#language6,#language7,#language8,#language9{
+        margin:0px  0px ;
+        font-size: 13px;
+    }
+
+    #footerSection{
+        margin-top: 146px;
+    }
+
+    #foot1{
+        font-size: 12px;
+    }
+
+    #foot2{
+        padding:0 8px;
+    }
+
+    #leftFoot{
+        font-size: 10.6px;
+    }
+
+    #rightFoot{
+       font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #headList{
+        margin-left: 380px;
+    }
+
+    #footerSection{
+        margin-top: 142px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #headList{
+        margin-left: 620px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #headList{
+        margin-left: 920px;
+    }
+}

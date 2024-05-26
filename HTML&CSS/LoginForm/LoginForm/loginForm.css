@@ -1,0 +1,140 @@
+body{
+    font-family: "Roboto";
+    color:#ffffff;    
+}
+#loginBackgroundContainer{
+    background-image: url("/LoginForm/login_bg.avif");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    position: fixed;
+    
+}
+#loginContainer{
+    border:2px solid rgba(255,255,255,.2);
+    border-radius: 10px;
+    box-shadow:0 0 40px rgba(0,0,0,.2) ;
+    background:transparent;
+    background-position: center;
+    padding: 1rem;
+    height:53vh;
+
+
+}
+#loginHead{
+    text-decoration: double;
+    margin-top: 10px;
+    text-align: center;
+
+}
+.formField{
+    position: relative;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 7rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.formField input{
+    background-color: transparent;
+    border: none;
+    border: 2px solid  rgba(0,0,0,.2);
+    outline: none;
+    border-color: none;
+    border-radius: 50px;
+    height:45px;
+    width: 600%;
+    font-size: 1.1rem; 
+    padding-left: 1rem;
+    box-shadow:0 0 10px rgba(0,0,0,.2) ;
+    color: #ffffff;
+
+}
+#checkMe{
+color:#ffffff;
+}
+input:focus{
+    border:2px solid rgba(255,255,255,.2);
+
+}
+.bi-person,.bi-lock{
+    position: absolute;
+    margin-left: 290px;
+    font-size: 1.5rem;
+    margin-top: 0.7rem;
+
+}
+input:focus + .bi-person,
+input:focus + .bi-lock {
+    display: none;
+}
+.bi-person:hover{
+    display: block;
+}
+::placeholder{
+    color:white
+}
+#rememberForgot{
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: space-between;
+    gap:4rem;
+    margin-bottom: 1rem;
+}
+#rememberForgot a:hover,#registerLink a:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+a{
+    color:#ffffff;
+    text-decoration: none;
+}
+#forgotPassword{
+    margin-right: 10px;
+}
+#rememberForgot label{
+    position: relative;
+    left: 2rem;
+}
+#checkMe{
+    background-color: #ffffff;
+    margin-right: 1rem;
+    position: absolute;
+    right: 5.2rem;
+}
+    
+
+#loginBtn{
+    background-color: transparent;
+    border: none;
+    border: 2px solid  rgba(0,0,0,.2);
+    outline: none;
+    border-color: none;
+    border-radius: 50px;
+    height:50px;
+    width: 100%;
+    font-size: 1.1rem; 
+    padding-left: 1rem;
+    box-shadow:0 0 10px rgba(0,0,0,.2) ;
+    color:#ffffff;
+    cursor: pointer;
+    
+}
+#register{
+    text-align: center;
+}
+#registerLink{
+    font-size:15px;
+
+}
+.register{
+    margin-left: 5px;
+}

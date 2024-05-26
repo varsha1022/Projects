@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+
+.music-container {
+  background-color: #03174c;
+  color: #ffffff;
+  width: 30%;
+  font-family: "Bree Serif", sans-serif;
+  position: fixed;
+  top: 2%;
+  left: 36%;
+}
+
+p {
+  color: #98a1bd;
+}
+
+h3 {
+  padding-left: 1rem;
+  margin-top: 0;
+}
+
+.img {
+  height: 25vh;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.p1,
+.p2,
+.p3 {
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+
+.body {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.related {
+  margin-top: 0;
+  display: flex;
+  padding-left: 1rem;
+}
+
+.music1,
+.music2 {
+  width: 90%;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+button {
+  background-color: #6a75f8;
+  border-radius: 10px;
+  height: 2rem;
+  font-weight: 600;
+  width: 25%;
+  color: #ffffff;
+  margin-left: 1rem;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 7px;
+}

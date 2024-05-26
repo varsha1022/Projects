@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background color changes</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #button {
+        background-color: rgb(34, 112, 248);
+        border: none;
+        height: 2.3rem;
+        width: 100px;
+        border-radius: 12px;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      h2 {
+        margin-top: 5px;
+      }
+      #bgContainer {
+        height: 80vh;
+        width: 35%;
+        padding: 5px;
+        position: fixed;
+        left: 32%;
+        top: 8%;
+      }
+      #container {
+        background-color: ghostwhite;
+        height: 60vh;
+        width: 100%;
+        padding: 0;
+        margin-top: 8px;
+        border-bottom: 2px solid silver;
+        border-left: 2px solid silver;
+        border-right: 2px solid silver;
+        border-top: 2px solid silver;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bgContainer">
+      <h2>Click the below button to change color</h2>
+      <div>
+        <button id="button" onclick="changeBackgroundColor()">Click Me</button>
+      </div>
+      <div id="container"></div>
+    </div>
+    <script>
+      let buttonElement = document.getElementById("button");
+      // console.log(buttonElement);
+
+      let bgElement = document.getElementById("container");
+      // console.log(bgElement);
+
+      colors = [
+        "#e75d7c",
+        "#b16cef",
+        "#53cca4",
+        "#efc84d",
+        "#628ef0",
+        "#184b73",
+        "#883e7f",
+        "#ed048b",
+        "blue",
+        "green",
+        "yellow",
+        "bluevoilet",
+        "red",
+        "hotpink",
+        "gray",
+      ];
+      function changeBackgroundColor() {
+        let randomIndex = Math.floor(Math.random() * colors.length);
+        bgElement.style.backgroundColor = colors[randomIndex];
+      }
+    </script>
+  </body>
+</html>
